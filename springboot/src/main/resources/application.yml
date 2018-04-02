@@ -1,3 +1,14 @@
 spring:
   profiles:
     active: dev
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/imooc
+    username: root
+    password: mysql
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+

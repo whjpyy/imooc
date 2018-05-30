@@ -19,7 +19,7 @@ import java.net.URI;
  * Created by youzeng
  * time: 2018-05-29 00:42
  */
-public class HDFSApp {
+public class HDFSAppTest {
     FileSystem fileSystem = null;
     Configuration configuration = null;
 
@@ -139,11 +139,11 @@ public class HDFSApp {
     public void setUp() throws Exception {
         configuration = new Configuration();
         fileSystem = FileSystem.get(new URI(HDFS_PATH), configuration, "hadoop");
-        System.out.println("HDFSApp.setUp");
+        System.out.println("HDFSAppTest.setUp");
     }
 
     @After
     public void tearDown() throws Exception {
-        System.out.println("HDFSApp.tearDown");
+        System.out.println("HDFSAppTest.tearDown");
     }
 }
